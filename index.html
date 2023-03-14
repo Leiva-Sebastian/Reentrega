@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!--Menu encabezadp-->
+<section>
+  <div>
+    <header>
+      <div class="logo">
+        <a href="">Jorge</a>
+      </div>
+      <nav id="nav" class="responsive">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#Curriculum" onclick="seleccionar()">Curriculum</a></li>
+          <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+          <li><a href="#portfolio" onclick="seleccionar()">Galeria</a></li>
+          
+          <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+
+    </header>
+  </div>
+</section>
+  <!--seccion-->
+<section id="inicio" class="inicio">
+    <div class="contenido-banner">
+      <div class="contenedor-img">
+        <img width="250" height="300" src="ig/fotocv.jpg" alt="">
+      </div>
+      <h1>Jorge Lopez</h1>
+      <h2>Ingeniero en Petroleo</h2>
+      <div class="Contacto">
+        <a href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.google.com/intl/es-419/gmail/about/"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-solid fa-phone"></i></a>        
+      </div>
+    </div>
+  </section>
+  <!--seccion Curriculum-->
+<section id="Curriculum" class="Curriculum">
+    <div class="contenido-seccion">
+      <h2>Curriculum</h2>
+      <div class="fila">
+        <div class="col">
+          <h3>Datos Complementarios</h3>
+          <ul>
+            <li>
+              <strong>Localidad </strong>
+              Temperley
+            </li>
+            <li>
+              <strong>Fecha de Nacimiento </strong>
+              10/01/1982
+            </li>
+            <li>
+              <strong> Idiomas </strong>
+              Español (Nativo)
+              Ingles (Avanzado)
+            </li>
+            <li>
+              <strong>Paquete office </strong>
+              Word, Excel, PowerPoint (Avanzado)
+            </li>
+          </ul>
+        </div>
+        <div class="col izquierda">
+          <h3>Experiecia Laboral</h3>
+          <div class="item derecha">
+            <h4>Ingeniero petrolero junior</h4>
+            <span class="casa">Open Systems International (OSI)</span>
+            <span class="fecha">2009- 2012</span>
+          </div>
+          <div class="item derecha">
+            <h4>Ingeniero en petroleo senior</h4>
+            <span class="casa"> Open Systems International (OSI)</span>
+            <span class="fecha">2012-Actualmente</span>
+
+            <p> Ingeniero petrolero con experiencia en la industria petrolífera y con un máster en ingeniería
+              petroquímica. Poseo sólidas habilidades en el diseño de sistemas de producción y procesamiento de
+              hidrocarburos, así como en el tratamiento y la refinación de los derivados del petróleo. Recientemente,
+              ocupé el puesto de ingeniero petrolero en Open Systems International (OSI), donde fui promovido de
+              ingeniero junior a ingeniero senior.
+            </p>
+
+
+
+          </div>
+          <div class="col derecha">
+            <h3>Educacion</h3>
+            <div class="item izquierda">
+              <h4>Bachillerato en Economía y Administració</h4>
+              <span class="casa">Esc.Edu.Media Nº8</span>
+              <span class="fecha">1995 2000</span>
+
+            </div>
+            <div class="item izquierda">
+              <h4>Ingenieria en petroleo</h4>
+              <span class="casa">Universidad Nacional de Buenos Aires</span>
+              <span class="fecha">2002-2008</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>
+          Descargar CV</a <i class="fa-solid fa-download"></i>
+         <span class="overlay"> </span>
+        </button>
+    </div>
+  </section>
+
+ <!-- habilidades -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Habilidades Laborales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Galeria</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="ig/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Area Laboral</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="ig/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Area Laboral</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="ig/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Area Laboral</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="ig/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Area de Estudio</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="ig/p5.png" "="">
+                    <div class="overlay">
+                        <h3>Universidad asistida</h3>
+                        <p>Logo</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="ig/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Area de Laboral</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+   <!--contacto-->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+      <h2>Contacto</h2>
+      <div class="fila">
+        <div class="col">
+          <input type="text" placeholder="Tu nombre">
+          <input type="text" placeholder="Numero Telefonico">
+          <input type="text" placeholder="Correo electronico">
+          <input type="text" placeholder="Tema">
+          <textarea name="" id="" cols="150" rows="20" placeholder="Mensaje"></textarea>
+          <button>Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"> </span>
+
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+<footer>
+<a href="#inicio" class="arriba"><i class="fa-solid fa-arrow-up"></i> </a>
+ <div class="fila">
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-phone"></i> Teléfono
+                    </h2>
+                    <span class="info-contacto">11 - 11223344</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-envelope"></i> Correo
+                    </h2>
+                    <span class="info-contacto">JorgeLopez@gmail.com</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-brands fa-facebook"></i> Facebook
+                    </h2>
+                    <span class="info-contacto"> Ing. Jorge lopez</span>
+                </div>
+   <div class="col">
+                    <h2>
+                       <i class="fa-brands fa-linkedin"></i> LinkendIn
+                    </h2>
+                    <span class="info-contacto">Ing. Jorge Lopez</span>
+                </div>
+   
+            </div>
+</footer>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+
+</body>
+
+</html>

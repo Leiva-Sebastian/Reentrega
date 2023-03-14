@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+*{box-sizing:border-box;
+  font-family: 'work sans';
+  margin: 0 ;
+  padding: 0;  
+}
+html {
+  scroll-behavior: smooth;
+}
+/*menu */
+header{
+  background: #17979f;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+header header{
+  max-width:1100px ;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+header .logo a{
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family:'yellowtail';
+  color: black;
+  text-shadow: 0 0 35px white; 
+}
+header ul{
+  display: flex;
+  list-style: none;
+}
+header nav ul li a{
+  text-align: none;
+  color: black;
+  margin: 0 15px;
+  padding: 3px;
+  transition: .5%;
+  text-decoration: none;
+  cursor:pointer;
+}
+header nav ul li a:hover{
+  color: blue;
+}
+.nav-responsive{
+  background-color: #17979f;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display:none;
+}
+/*seccion inicio */
+.inicio{
+  background:linear-gradient(to top, rgb(30,35,38,.8),rgb(30,35,38,.1)),
+    url(ig/petroleo.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.inicio .contenido-banner{
+  padding: 20px;
+  background-color: black;
+  max-width: 350px;
+  margin: auto;
+  align-items: center;
+  border-radius: 40px;
+}
+.inicio .contenido-banner img{
+  margin-top: 40px;
+  border: 10px solid skyblue;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+.inicio .contenido-banner h1{
+  margin-top: 40px;
+  font-size: 42px;
+  font-family:'righteous';
+}
+.inicio .contenido-banner h2{
+  font-size: 15px;
+  font-weight: normal;
+}
+.inicio .contenido-banner .Contacto a
+{color: white;
+ display: inline-block;
+ text-decoration: none;
+ width: 42px;
+ height: 42px;
+ line-height: 42px;
+ margin: 40px 5px;
+ font-size: 20px;
+ transition: .3%;
+}
+.inicio .contenido-banner .Contacto a :hover{
+  background-color: purple;
+}
+
+/*seccion curriculum */
+.Curriculum{
+  background-color: #252a2e;
+  color: white;
+  padding: 50px 20px;
+}
+.Curriculum .contenido-seccion{
+  max-width: 1100px;
+  margin: auto; 
+}
+.Curriculum .contenido-seccion h2{
+  font-size: 48px;
+  font-family: 'righteous';
+  text-align: center;
+  padding: 20px 0;
+}
+.Curriculum .fila{
+  display: flex;
+}
+Curriculum .fila .col{
+  width: 49px;
+  padding: 0 20px;
+}
+
+.Curriculum .fila .col h3{
+  font-size: 28px;
+  font-family:'righteous' ;
+  margin-bottom: 25px auto;
+}
+.Curriculum .fila .izquierda{
+  border-right: 2px solid black;
+}
+.Curriculum .fila .derecha{
+  border-left: 2px solid black;
+}
+.Curriculum .fila .item{
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: grey;
+  position: relative;
+}
+.Curriculum .fila .item h4{
+  font-size: 20px;
+  margin-bottom: 10px auto;
+}
+.Curriculum .fila .item .casa{
+  color: skyblue;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+}
+.Curriculum .fila .item .fecha{
+  color: skyblue;
+  margin-bottom: 10px;
+  display: block;
+}
+.Curriculum .fila .item p{
+  line-height: 24px;
+}
+.Curriculum button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid white;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  z-index: 10px;
+}
+.Curriculum button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: skyblue;
+  z-index: .1 ;
+  transition: 1%;
+}
+.Curriculum button:hover .overlay {
+  width: 100%;
+}
+
+/* SECCION PORTFOLIO */
+.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/* skills */
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajo{
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.skills .skill .proyect{
+    width: 0%;
+    animation: 2s proyect forwards;
+}
+@keyframes proyect {
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
+
+
+
+
+
+
+
+
+
+.contacto{
+  background-color:  #252a2e;
+  color: white;
+  padding: 50px 0;
+}
+.contacto .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.contacto h2{
+  font-size: 48px;
+  font-family: 'righteous';
+  text-align: center;
+  padding: 20px 0;
+}
+.contacto .fila{
+  display: flex;
+}
+.contacto .col input, .contacto .col textarea{
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color:  white;
+  color: black;
+  font-size: 18px;
+}
+.contacto button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid white;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  z-index: 10px;
+}
+.contacto button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: skyblue;
+  z-index: .1 ;
+  transition: 1%;
+}
+.contacto button:hover .overlay{
+  width: 100%;}
+footer{
+  background-color:  #252a2e;
+  color: white;
+  padding: 50px 0 30px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+footer .contacto{
+  margin-bottom: 20px;
+}
+footer .contacto a{
+  color: white;
+ display: inline-block;
+ text-decoration: none;
+ width: 42px;
+ height: 42px;
+ line-height: 42px;
+ margin: 40px 5px;
+ font-size: 20px;
+ transition: .3%; 
+}
+footer .arriba{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: skyblue;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+
+/*seccion resposive */
+@media screen and (max-width:980px){
+  nav{
+    display:none;
+  }
+  .nav-responsive{
+    display:block;
+  }
+  nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: white;
+    width: 180px;
+  }
+  nav.responsive ul{
+    display: block !important;
+  }
+  nav.responsive ul li{
+    border-bottom: 1px solid #252a2e;
+    padding: 10px 0;
+    
+  }
+
+  
+}
+@media screen and (max-width: 700px){
+  .Curriculum .fila{
+    display: block;
+  }
+  .Curriculum .fila .col{
+    width: fit-content;
+  }
+  .Curriculum .fila .col{
+        width: 90%;
+    }
+  .contacto .fila{
+    display: block;
+  }
+  .contacto .fila .col{
+    width: 100%;
+  }
+  .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
